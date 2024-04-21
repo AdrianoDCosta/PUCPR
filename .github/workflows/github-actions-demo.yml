@@ -12,17 +12,17 @@ jobs:
   build-job:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout0v3
+      - uses: PUCPR
       - run: python3 -V
           
   test-count:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout0v3
+      - uses: PUCPR
       - run: python3 soma.py
           
   deploy-job:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout0v3
+      - uses: PUCPR
       - run: echo "Finalizado"
