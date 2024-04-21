@@ -19,10 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: python3 soma.py
+      - run: python3 soma.py echo " | Hello World!"
           
   deploy-job:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: echo "Finalizado"
+      - run: echo "Finalizado com Sucesso!"
