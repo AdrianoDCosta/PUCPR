@@ -10,19 +10,19 @@ on:
 
 jobs:
   build-job:
-    runs-on: windows
+    runs-on: ubuntu-latest
     steps:
-      - uses: build
+      - uses: actions/checkout0v3
       - run: python3 -V
           
   test-count:
-    runs-on: windows
+    runs-on: ubuntu-latest
     steps:
-      - uses: test
+      - uses: actions/checkout0v3
       - run: python3 soma.py
           
   deploy-job:
-    runs-on: windows
+    runs-on: ubuntu-latest
     steps:
-      - uses: deploy
+      - uses: actions/checkout0v3
       - run: echo "Finalizado"
