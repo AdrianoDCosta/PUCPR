@@ -26,9 +26,3 @@ jobs:
     steps:
       - use: deploy
       - run: echo "Finalizado"
-
-
-
-    /
-      - uses: test
-      - run: python3 soma.py
