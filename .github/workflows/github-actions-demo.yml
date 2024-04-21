@@ -1,18 +1,18 @@
-name: python
+name: CI
 
 on:
   push:
-    braches: ["main"]
+    branches: [ "main" ]
   pull_request:
-    branches: ["main"]
+    branches: [ "main" ]
 
-  workflow dispatch:
+  workflow_dispatch:
 
 jobs:
   build-job:
     runs-on: windows
     steps:
-      - use: build
+      - uses: build
       - run: python3 -V
           
   test-count:
@@ -24,5 +24,5 @@ jobs:
   deploy-job:
     runs-on: windows
     steps:
-      - use: deploy
+      - uses: deploy
       - run: echo "Finalizado"
