@@ -1,6 +1,6 @@
 name: python
 
-on
+on:
   push:
     braches: ["main"]
   pull_request:
