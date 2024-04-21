@@ -1,3 +1,21 @@
-name: CI-CD
+image: python
 
-on
+stages:
+  - build
+  - test
+  - deploy
+
+build-job:
+  stage: build
+  script: 
+      - python3 -V
+
+test-count:
+  - stage: test
+  - script:
+      - python3 soma.py
+
+deplyo-job:
+  - stage: deploy
+  - script:
+      - echo "Finalizado!"
